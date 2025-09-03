@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid de Imágenes</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff; /* Fondo blanco */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 6cm);
+            grid-template-rows: repeat(3, auto);
+            gap: 1em; /* Espacio entre las imágenes */
+            justify-content: center;
+        }
+
+        .grid-item {
+            width: 6cm;
+            height: auto;
+            border: none;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block; /* Elimina el espacio extra debajo de la imagen */
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <img src="ruta/a/tu/imagen1.jpg" alt="Imagen 1">
+    </div>
+    <div class="grid-item">
+        <img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2">
+    </div>
+    <div class="grid-item">
+        <img src="ruta/a/tu/imagen3.jpg" alt="Imagen 3">
+    </div>
+    <div class="grid-item">
+        <img src="ruta/a/tu/imagen4.jpg" alt="Imagen 4">
+    </div>
+    <div class="grid-item">
+        <img src="ruta/a/tu/imagen5.jpg" alt="Imagen 5">
+    </div>
+    <div class="grid-item">
+        <img src="ruta/a/tu/imagen6.jpg" alt="Imagen 6">
+    </div>
+</div>
+
+</body>
+</html>
